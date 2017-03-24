@@ -1,0 +1,19 @@
+{
+  "name": "jest-json-repoter",
+  "version": "1.0.0",
+  "description": "JSON test results processor for Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "test",
+    "jest",
+    "reporter"
+  ],
+  "author": {
+    "email": "vall3y@gmail.com",
+    "name": "Guy Zissman"
+  },
+  "license": "MIT"
+}

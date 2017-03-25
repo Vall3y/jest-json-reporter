@@ -1,13 +1,20 @@
-var fs = require('fs');
+const fs = require('fs');
+const readPkg = require('read-pkg');
+const path = require('path');
 
-module.exports = function (testResults) {
-  var testResultsString = JSON.stringify(testResults);
+module.exports = (testResults) => {
+  const testResultsString = JSON.stringify(testResults);
 
-  fs.writeFile('./test-results.json', testResultsString, function (err) {
+  const packagedData = readPkg.sync(process.cwd())
+  const config = packagedData.jestJsonReporter || {};
+
+  const outputFile = config.outputFile || './test-results.json';
+
+  fs.writeFile(outputFile, testResultsString, (err) => {
     if (err) {
-      console.error(err);
-      return 1;
+      console.warn('Unable to write test results JSON', err);
     }
+    return 1;
   });
 
   return 0;

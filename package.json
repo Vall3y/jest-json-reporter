@@ -1,5 +1,5 @@
 {
-  "name": "jest-json-repoter",
+  "name": "jest-json-reporter",
   "version": "1.1.0",
   "description": "JSON test results processor for Jest.",
   "main": "index.js",

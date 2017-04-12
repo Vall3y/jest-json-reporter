@@ -1,6 +1,6 @@
 {
   "name": "jest-json-reporter",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "JSON test results processor for Jest.",
   "main": "index.js",
   "scripts": {

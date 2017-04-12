@@ -14,8 +14,7 @@ module.exports = (testResults) => {
     if (err) {
       console.warn('Unable to write test results JSON', err);
     }
-    return 1;
   });
 
-  return 0;
+  return testResults;
 };

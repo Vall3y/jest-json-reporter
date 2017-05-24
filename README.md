@@ -13,7 +13,7 @@ Then add to Jest config in the package.json
 ```
 ...
 "jest": {
-  "testResultsProcessor": "./node_modules/jest-json-repoter"
+  "testResultsProcessor": "jest-json-reporter"
 },
 ...
 ```
